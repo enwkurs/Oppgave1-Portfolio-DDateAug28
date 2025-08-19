@@ -1,63 +1,52 @@
 <!DOCTYPE html>
-<html lang="no">
-  <!-- head = information for the browser -->
-  <head>
-    <title>Home</title>
+<html lang="en">
+
+  <head>  <!-- head = information for the browser -->
+    <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <!-- body = information for the website -->
-  <body>
-    <header>
-      <!-- logo, company name, navigation, theme switch, search field, SoMe -->
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
+  <body>  <!-- body = information for the website -->
 
-          <li>
-            <a href="">About</a>
-          </li>
+    <header>  <!-- logo, company name, navigation, theme switch, search field, SoMe -->
+      
+      <nav> <!-- Main Navigation - Home, About Me, Projects -->
+        <ul id="navbar"> <!-- Navbar id for styling, there is only one nav bar -->
+          <li class="navbutton"><a href="#home">home</a></li> <!-- Navbutton class for styling buttons separate from the bar, there are multiple buttons -->
 
-          <li>
-            <a href="">Products</a>
-          </li>
+          <li class="navbutton"><a href="about">about</a></li>
+
+          <li class="navbutton"><a href="#projects">projects</a></li>
+
         </ul>
       </nav>
     </header>
 
-    <main>
-      <!-- Main page content: introduction, products, etc -->
+    
+    <main>  <!-- Main page content: introduction, products, etc -->
 
-      <section id="home">
-        <!-- HERO / Main, Home, Intro, First Impression - Mostly called hero
-        set an id property to be able to anchor link to an element -->
-
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fuga!
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores repudiandae eveniet cum consequuntur magni ullam.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          <br /> <!-- <br> or <br /> works. /> is more visually distinct. There is no gap between sections when using <br> compared to <p> -->
-            
-          Velit perferendis, ducimus delectus necessitatibus esse accusamus hic, ad debitis eum animi cumque! Itaque id perspiciatis quae cum rem eaque, accusamus vero atque dicta est repellat officiis minus modi iusto dolores aliquam assumenda fuga. At vel iste culpa voluptatum assumenda, magnam quam.
-        </p>
+      <section id="home"> <!-- HERO / Main, Home, Intro, First Impression - Mostly called hero set an id property to be able to anchor link to an element -->
+        
       </section>
+
+      
+      <section id="about">  <!-- About Me, Small intro -->
+      
+      </section>
+
+      
+      <section id="projects"> <!-- Project Gallery, placeholder to be filled -->
+      
+      </section>
+
     </main>
 
-    <footer>
-      <!-- logo, navigation, cedits, TOS, other extra or important information, contact, SoMe -->
-
-      <h3>Made by Erin</h3>
+    
+    <footer>  <!-- logo, navigation, cedits, TOS, other extra or important information, contact, SoMe -->
+      <p>This is a placeholder.</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(/assets/Quicksand-VariableFont_wght.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', 'Tahoma', 'sans serif';
+    height: 100%;
+}
+
+/* HEADER FLEX ELEMENT */
+header {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+/* NAV ELEMENT WITHIN HEADER FLEX ELEMENT */
+#navbar {
+    background-color: green;
+    padding: 0px 20px; /* First number = top/bottom, Second number = left/right */
+    margin: 0px 20px;
+    height: 50px;
+    display: flex;
+    gap: 20px; /* Space between elements */
+}
+
+/* LIST ELEMENT WITHIN NAVBAR ELEMENT */
+.navbutton {
+    background-color: orange;
+    list-style-type: none;
+    height: 50px;
+    display: inline flex; /* INLINE to remove bullets from <li> , FLEX to control alignment of elements */
+    align-items: flex-end;
+}
+/* END HEADER FLEX ELEMENT */
+
+main {
+    background-color: blue;
+    background-image: url(/assets/bgimg.webp);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    min-height: 100vh;
+}
