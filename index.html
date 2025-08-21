@@ -13,13 +13,13 @@
 
     <header>  <!-- logo, company name, navigation, theme switch, search field, SoMe -->
       
-      <img src="/assets/BigSparkle.png" alt="sparkle" />
+      <img src="/assets/BigSparkle.png" id="headerlogo" alt="sparkle" />
 
       <nav> <!-- Main Navigation - Home, About Me, Projects -->
         <ul id="navbar"> <!-- Navbar id for styling, there is only one nav bar -->
           <li class="navbutton"><a href="#home">home</a></li> <!-- Navbutton class for styling buttons separate from the bar, there are multiple buttons -->
 
-          <li class="navbutton"><a href="about">about</a></li>
+          <li class="navbutton"><a href="#about">about</a></li>
 
           <li class="navbutton"><a href="#projects">projects</a></li>
 
@@ -30,13 +30,17 @@
     
     <main>  <!-- Main page content: introduction, products, etc -->
 
-      <section id="home"> <!-- HERO / Main, Home, Intro, First Impression - Mostly called hero set an id property to be able to anchor link to an element -->
+      <section id="home" class="hero"> <!-- HERO / Main, Home, Intro, First Impression - Mostly called hero set an id property to be able to anchor link to an element -->
         
-        <img src="/assets/bgimgwip2.webp" alt="placeholder" width="45%" />
+        <img src="/assets/BigSparkle.png" alt="placeholder" />
 
-        <h1>This is a Placeholder</h1>
+        <div id="herotext">
+          <h1>This is a Placeholder</h1>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores officiis dignissimos eos excepturi quaerat? Necessitatibus.</p>
+         <p>The padding here looks wrong because the sparkle image to the left has a space included in the image itself. Can be fixed by trimming image or adding padding on the right to compensate.
+          <br><br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores officiis dignissimos eos excepturi quaerat? Necessitatibus.</p>
+        </div>
         <!-- How to get this to position below h1? -->
 
       </section>
@@ -44,7 +48,7 @@
       
       <section id="about">  <!-- About Me, Small intro -->
       
-        <h1>This is a Placeholder</h1>
+        <h2>This is a Placeholder</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, consectetur. Nam velit quo quas porro ad deleniti deserunt. Odio id hic magni, mollitia blanditiis tenetur magnam obcaecati ad! Accusantium a animi libero exercitationem, facere est tempora, fuga error in dolor cumque consequuntur deleniti numquam iusto, ea molestias vitae soluta quo? Laboriosam et iste blanditiis adipisci excepturi cum recusandae neque error. Magnam, praesentium. Nostrum sit error aliquam eos eum natus odio quam, recusandae iure aperiam ipsum ex accusamus aspernatur atque repellat! Dolorum sed est dicta deserunt necessitatibus eveniet, voluptates quae accusamus voluptatem. Modi, dolore! Laudantium soluta maiores mollitia iure quaerat beatae.</p>
 
@@ -53,7 +57,7 @@
       
       <section id="projects"> <!-- Project Gallery, placeholder to be filled -->
       
-        <h1>This is a Placeholder</h1>
+        <h2>This is a Placeholder</h2>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim blanditiis, quasi dignissimos mollitia, odit unde neque, eligendi nulla labore alias earum praesentium optio. Ducimus debitis culpa suscipit, magni accusamus voluptas consectetur optio magnam unde, possimus minus ipsam voluptatibus aliquid nam odit vitae amet mollitia deserunt reprehenderit quibusdam, dolorem repudiandae?</p>
 

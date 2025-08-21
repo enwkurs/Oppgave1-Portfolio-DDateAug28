@@ -7,9 +7,9 @@
 html, body {
     background-color: chartreuse;
     font-family: 'Quicksand', 'Tahoma', 'sans serif';
-    
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 main {
@@ -20,18 +20,26 @@ main {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* At some point the even spacing this gave me disappeared and I don't know why */
+    justify-content: space-evenly;
     align-items: center;
 }
 
 section {
-    background-color: magenta;
+    background-color: rgba(0, 0, 0, .5);
+    scroll-margin-top: 12vh;
 }
 
 h1 {
     background-color: blueviolet;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+h2 {
+    background-color: gray;
+    margin: 0;
+    text-align: center;
 }
 
 p {
@@ -41,32 +49,39 @@ p {
 /* END OF CONTROLS FOR ENTIRE PAGE */
 
 
-
-
 /* HEADER FLEX ELEMENT */
 header {
     background-color: red;
-    height: 6vh; /* Bar heigh is 6% of viewport height */
-    min-height: 20px; /* Bar cannot shrink less than 20px, even if 6% is less than 30px */
-    padding-left: 0px 15px; /* First number = top/bottom, Second number = left/right */
+    position: sticky;
+    top: 0;
+    height: 6vh;
+    padding: 10px 16px; /* First number = top/bottom, Second number = left/right */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO IN HEADER */
+#headerlogo {
+    height: 3em;
+    overflow: auto;
 }
 
 /* NAV ELEMENT WITHIN HEADER FLEX ELEMENT */
 #navbar {
     background-color: green;
-    font-size: 18px;
+    padding: 0;
+    width: 300px;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* LIST ELEMENT WITHIN NAVBAR ELEMENT - NAV BUTTONS */
 .navbutton {
     background-color: orange;
     list-style-type: none;
-    width: 150px;
-    display: inline flex; /* INLINE to remove bullets from <li> , FLEX to control alignment of elements */
-    justify-content: center;
-    align-items: center;
 }
 
 .navbutton a:hover {
@@ -74,12 +89,26 @@ header {
 }
 /* END HEADER FLEX ELEMENT */
 
-
-
 #home {
     width: 50%;
     min-height: 100vh;
 
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.hero img {
+    width: 16em;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
 }
 
 #about {
@@ -115,9 +144,9 @@ header {
 /* FOOTER FLEX ELEMENT */
 footer {
     background-color:deepskyblue;
-    min-height: 6vh;
+    height: 6vh;
+    padding: 10px 16px; /* First number = top/bottom, Second number = left/right */
     margin: 0;
     padding: 0;
 }
-/* Unknown gap above footer, showing page BG color */
 /* END FOOTER FLEX ELEMENT */
