@@ -7,7 +7,9 @@
 html, body {
     background-color: chartreuse;
     font-family: 'Quicksand', 'Tahoma', 'sans serif';
-    height: 100%;
+    
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -16,7 +18,6 @@ main {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around; /* At some point the even spacing this gave me disappeared and I don't know why */
@@ -29,10 +30,13 @@ section {
 
 h1 {
     background-color: blueviolet;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     background-color: lightcoral;
+    margin: 0;
 }
 /* END OF CONTROLS FOR ENTIRE PAGE */
 
@@ -74,14 +78,20 @@ header {
 
 #home {
     width: 50%;
+    min-height: 100vh;
+
 }
 
 #about {
     width: 50%;
+    min-height: 100vh;
+
 }
 
 #projects {
     width: 50%;
+    min-height: 100vh;
+
 }
 
 
@@ -106,6 +116,8 @@ header {
 footer {
     background-color:deepskyblue;
     min-height: 6vh;
+    margin: 0;
+    padding: 0;
 }
 /* Unknown gap above footer, showing page BG color */
 /* END FOOTER FLEX ELEMENT */
