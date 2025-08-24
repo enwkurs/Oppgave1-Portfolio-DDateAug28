@@ -1,4 +1,6 @@
-/* CONTROLS FOR ENTIRE PAGE */
+/* ********** CONTROLS FOR ENTIRE PAGE ********** */
+
+/* Misc Page Settings */
 @font-face {
     font-family: Quicksand;
     src: url(/assets/Quicksand-VariableFont_wght.ttf);
@@ -7,11 +9,31 @@
 html, body {
     background-color: chartreuse;
     font-family: 'Quicksand', 'Tahoma', 'sans serif';
+    color: #fff;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
+a:link {
+    color: #b3c4f8;
+}
+
+a:visited {
+    color: #b3c4f8;
+}
+
+a:hover {
+    color: #b3c4f8;
+}
+
+a:active {
+    color: #b3c4f8;
+}
+
+/* Main Body Content */
 main {
     background-color: blue;
     background-image: url(/assets/bgimgwip2.webp);
@@ -24,52 +46,92 @@ main {
     align-items: center;
 }
 
+/* Content Containers */
 section {
     background-color: rgba(0, 0, 0, .5);
-    scroll-margin-top: 12vh;
+
+    padding: 0 1em;
 }
 
+/* Heading Text 1 - Big */
 h1 {
-    background-color: blueviolet;
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:#845ff9;
+        /*  */
+    color: #845ff9;
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 2em;
 }
 
+/* Heading Text 2 - Med */
 h2 {
-    background-color: gray;
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: #b073c1;
+        /*  */
+    color: #b073c1;
     margin: 0;
-    text-align: center;
+    padding: 0;
+    text-align: left;
+    font-size: 1.5em;
 }
 
+/* Heading Text 3 - Small */
+h3 {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: #704c9e;
+        /*  */
+    color: #704c9e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraph Text */
 p {
-    background-color: lightcoral;
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: greenyellow;
+        /*  */
     margin: 0;
+    text-align: justify;
 }
-/* END OF CONTROLS FOR ENTIRE PAGE */
+/* ********** END OF CONTROLS FOR ENTIRE PAGE ********** */
 
+/*  */
 
-/* HEADER FLEX ELEMENT */
+/* ********** HEADER - LOGO / NAVIGATION LINKS ********** */
 header {
-    background-color: red;
+    background-color: #2e093e;
     position: sticky;
     top: 0;
     height: 6vh;
-    padding: 10px 16px; /* First number = top/bottom, Second number = left/right */
+    padding: 10px 16px; /* First number = top/bottom, Second number = left/right *****/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LOGO IN HEADER */
 #headerlogo {
     height: 3em;
     overflow: auto;
 }
 
-/* NAV ELEMENT WITHIN HEADER FLEX ELEMENT */
+
+/* Nav Bar - Flex Element Within Header Flex Element */
 #navbar {
-    background-color: green;
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
     padding: 0;
     width: 300px;
     font-size: 1.5em;
@@ -78,21 +140,30 @@ header {
     justify-content: space-between;
 }
 
-/* LIST ELEMENT WITHIN NAVBAR ELEMENT - NAV BUTTONS */
+/* Nav Buttons - List Element Within Navbar Element */
+/* Eventually make this into a full cover button */
 .navbutton {
-    background-color: orange;
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:orange;
+        /*  */
     list-style-type: none;
 }
 
 .navbutton a:hover {
     background-color: pink;
 }
-/* END HEADER FLEX ELEMENT */
+/* ********** END HEADER FLEX ELEMENT ********** */
 
+/*  */
+
+/* ********** MAIN PAGE CONTENT - THREE SECTIONS - HOME / ABOUT / PROJECTS ********** */
+
+/* Hero / Home - Brief Intro */
 #home {
-    width: 50%;
+    width: 55vw;
     min-height: 100vh;
-
 }
 
 .hero {
@@ -111,20 +182,27 @@ header {
     flex-direction: column;
 }
 
+
+/* About */
 #about {
-    width: 50%;
+    width: 55vw;
     min-height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
 }
 
+/* Projects */
 #projects {
-    width: 50%;
+    width: 55vw;
     min-height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+    scroll-margin-top: .5em;
 }
-
-
-
 
 /* PROJECT GALLERY DIV */
 #gallery {
@@ -138,15 +216,86 @@ header {
 }
 /* END PROJECT GALLERY */
 
+/* ********** END MAIN CONTENT SECTION ********** */
 
+/*  */
 
-
-/* FOOTER FLEX ELEMENT */
+/* ********** FOOTER FLEX ELEMENT ********** */
 footer {
-    background-color:deepskyblue;
-    height: 6vh;
+    background-color: #2e093e;
+    min-height: 6vh;
     padding: 10px 16px; /* First number = top/bottom, Second number = left/right */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Split Footer Into 2 Sectons - Removes SECTION background color */
+.footersec {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: aquamarine;
+        /*  */
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CREDITS SECTION - LEFT SIDE */
+#credits ul {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: rgb(255, 238, 0);
+        /*  */
     margin: 0;
     padding: 0;
+    max-height: 10vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5em;
 }
-/* END FOOTER FLEX ELEMENT */
+
+#credits li {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: red;
+        /*  */
+}
+
+/* LINK OUT - RIGHT SIDE */
+#linksout h3 {
+    text-align: right;
+}
+
+/* SoMe Bar - Why is the box for this so wide? */
+#somebar {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: orange;
+        /*  */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+#somebar li {
+        /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color: fuchsia;
+        /*  */
+    list-style-type: none;
+}
+
+#somebar img {
+    max-height: 6vh;
+}
+/* ********** END FOOTER FLEX ELEMENT ********** */

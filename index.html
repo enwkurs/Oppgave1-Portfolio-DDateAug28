@@ -3,6 +3,7 @@
 
   <head>  <!-- head = information for the browser -->
     <title>Portfolio</title>
+    <link rel="icon" typ="image/png" href="/assets/favicon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
@@ -13,7 +14,7 @@
 
     <header>  <!-- logo, company name, navigation, theme switch, search field, SoMe -->
       
-      <img src="/assets/BigSparkle.png" id="headerlogo" alt="sparkle" />
+      <a href="#home"><img src="/assets/BigSparkle.png" id="headerlogo" alt="sparkle" /></a>
 
       <nav> <!-- Main Navigation - Home, About Me, Projects -->
         <ul id="navbar"> <!-- Navbar id for styling, there is only one nav bar -->
@@ -30,7 +31,7 @@
     
     <main>  <!-- Main page content: introduction, products, etc -->
 
-      <section id="home" class="hero"> <!-- HERO / Main, Home, Intro, First Impression - Mostly called hero set an id property to be able to anchor link to an element -->
+      <section id="home" class="hero"> <!-- HERO / MAIN  -->
         
         <img src="/assets/BigSparkle.png" alt="placeholder" />
 
@@ -40,24 +41,32 @@
          <p>The padding here looks wrong because the sparkle image to the left has a space included in the image itself. Can be fixed by trimming image or adding padding on the right to compensate.
           <br><br>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores officiis dignissimos eos excepturi quaerat? Necessitatibus.</p>
+
+          <h1>This is H1.</h1>
+          <h2>This is H2</h2>
+          <h3>This is H3</h3>
         </div>
-        <!-- How to get this to position below h1? -->
 
       </section>
 
       
-      <section id="about">  <!-- About Me, Small intro -->
+      <section id="about">  <!-- About Me, Detailed Info / Experience / Interests -->
       
-        <h2>This is a Placeholder</h2>
+        <h1>About Me</h1>
+
+        <h2>Experience</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, consectetur. Nam velit quo quas porro ad deleniti deserunt. Odio id hic magni, mollitia blanditiis tenetur magnam obcaecati ad! Accusantium a animi libero exercitationem, facere est tempora, fuga error in dolor cumque consequuntur deleniti numquam iusto, ea molestias vitae soluta quo? Laboriosam et iste blanditiis adipisci excepturi cum recusandae neque error. Magnam, praesentium. Nostrum sit error aliquam eos eum natus odio quam, recusandae iure aperiam ipsum ex accusamus aspernatur atque repellat! Dolorum sed est dicta deserunt necessitatibus eveniet, voluptates quae accusamus voluptatem. Modi, dolore! Laudantium soluta maiores mollitia iure quaerat beatae.</p>
 
+        <h2>Interests</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a repudiandae voluptas eius dolore similique ipsum ipsa at possimus iure tenetur cumque beatae officiis quo commodi rerum architecto delectus dolorum.</p>
       </section>
 
       
       <section id="projects"> <!-- Project Gallery, placeholder to be filled -->
       
-        <h2>This is a Placeholder</h2>
+        <h1>Projects</h1>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim blanditiis, quasi dignissimos mollitia, odit unde neque, eligendi nulla labore alias earum praesentium optio. Ducimus debitis culpa suscipit, magni accusamus voluptas consectetur optio magnam unde, possimus minus ipsam voluptatibus aliquid nam odit vitae amet mollitia deserunt reprehenderit quibusdam, dolorem repudiandae?</p>
 
@@ -74,8 +83,49 @@
     </main>
 
     
-    <footer>  <!-- logo, navigation, cedits, TOS, other extra or important information, contact, SoMe -->
-      <p>This is a placeholder.</p>
+    <footer>  <!-- Credits / Links Out -->
+
+      <section id="credits" class="footersec">
+        <h3>Credits</h3>
+
+          <ul>
+            <li>
+              <a href="https://www.flaticon.com/free-icons/stellar" title="stellar icons">Stellar icons created by meaicon - Flaticon</a>
+            </li>
+
+            <li>
+              <a href="https://www.flaticon.com/free-icons/stellar" title="stellar icons">Stellar icons created by meaicon - Flaticon</a>
+            </li>
+
+            <li>
+              <a href="https://www.flaticon.com/free-icons/stellar" title="stellar icons">Stellar icons created by meaicon - Flaticon</a>
+            </li>
+
+            <li>
+              <a href="https://www.flaticon.com/free-icons/stellar" title="stellar icons">Stellar icons created by meaicon - Flaticon</a>
+            </li>
+
+            <li>
+              <a href="https://www.flaticon.com/free-icons/stellar" title="stellar icons">Stellar icons created by meaicon - Flaticon</a>
+            </li>
+          </ul>
+
+      </section>
+
+      <section id="linksout" class="footersec">
+        <h3>Links Out</h3>
+
+        <ul id="somebar">
+          <li>
+            <a href="https://www.instagram.com/glitterbats/" target="_blank"><img src="assets/Instagram_Glyph_White.png" /></a>
+          </li>
+
+          <li>
+            <a href="https://github.com/enwkurs" target="_blank"><img src="assets/GitHub_Invertocat_Light.png" /></a>
+          </li>
+        </ul>
+      </section>
+      
     </footer>
   </body>
 </html>
