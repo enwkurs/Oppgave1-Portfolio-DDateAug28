@@ -36,7 +36,7 @@ a:active {
 /* Main Body Content */
 main {
     background-color: blue;
-    background-image: url(/assets/bgimgwip2.webp);
+    background-image: url(/assets/bgimgwide.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,7 @@ main {
 
 /* Content Containers */
 section {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .65);
 
     padding: 0 1em;
 }
