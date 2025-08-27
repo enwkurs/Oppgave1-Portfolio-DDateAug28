@@ -7,7 +7,7 @@
 }
 
 html, body {
-    background-color: chartreuse;
+    background-color: #764aa3;
     font-family: 'Quicksand', 'Tahoma', 'sans serif';
     color: #fff;
     margin: 0;
@@ -172,7 +172,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* PROJECT GALLERY DIV */
