@@ -36,7 +36,7 @@ a:active {
 
 /* Main Body Content */
 main {
-    background-color: blue;
+    background-color: #764aa3;
     background-image: url(/assets/bgbright.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -60,6 +60,7 @@ h1 {
     padding: 0;
     text-align: center;
     font-size: 2em;
+    text-shadow: 0 3px #3C1C69;
 }
 
 /* Heading Text 2 - Med */
@@ -69,6 +70,7 @@ h2 {
     padding: 0;
     text-align: left;
     font-size: 1.5em;
+    text-shadow: 0 3px #2e093e;
 }
 
 /* Heading Text 3 - Small */
@@ -76,6 +78,7 @@ h3 {
     color: #B073C1;
     margin: 0;
     padding: 0;
+    text-shadow: 0 3px #09000e;
 }
 
 /* Paragraph Text */
