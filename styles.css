@@ -37,7 +37,7 @@ a:active {
 /* Main Body Content */
 main {
     background-color: blue;
-    background-image: url(/assets/bgimgwide.webp);
+    background-image: url(/assets/bgbright.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@ section {
 
 /* Heading Text 1 - Big */
 h1 {
-    color: #845ff9;
+    color: #845FF9;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -64,7 +64,7 @@ h1 {
 
 /* Heading Text 2 - Med */
 h2 {
-    color: #b073c1;
+    color: #B073C1;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -81,7 +81,7 @@ h3 {
 /* Paragraph Text */
 p {
     margin: 0;
-    text-align: center;
+    text-align: justify;
 }
 /* ********** END OF CONTROLS FOR ENTIRE PAGE ********** */
 
@@ -138,21 +138,11 @@ header {
 }
 
 #home img {
-            /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
-    min-height: 150%;
+    max-width: 32em;
 }
 
 #herotext {
-            /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
-    max-width: 55%;
+    max-width: 20em;
     display: flex;
     flex-direction: column;
     gap: .5em
@@ -213,11 +203,6 @@ footer {
 
 /* Split Footer Into 2 Sectons - Removes SECTION background color */
 .footersec {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: aquamarine;
-        /*  */
     background: none;
     display: flex;
     flex-direction: column;
@@ -225,12 +210,12 @@ footer {
 }
 
 /* CREDITS SECTION - LEFT SIDE */
+#credits {
+        display: flex;
+        gap: .5em;
+}
+
 #credits ul {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: rgb(255, 238, 0);
-        /*  */
     margin: 0;
     padding: 0;
     max-height: 10vh;
@@ -239,14 +224,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     gap: .5em;
+
 }
 
 #credits li {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: red;
-        /*  */
+    list-style-image: url("/assets/sparkle16px.png");
+    list-style-position: inside;
 }
 
 /* LINK OUT - RIGHT SIDE */
@@ -256,11 +239,6 @@ footer {
 
 /* SoMe Bar - Why is the box for this so wide? */
 #somebar {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: orange;
-        /*  */
     margin: 0;
     padding: 0;
     display: flex;
@@ -269,11 +247,6 @@ footer {
 }
 
 #somebar li {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: fuchsia;
-        /*  */
     list-style-type: none;
 }
 
