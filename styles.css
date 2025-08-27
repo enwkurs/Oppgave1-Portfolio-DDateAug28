@@ -19,6 +19,7 @@ html, body {
 
 a:link {
     color: #b3c4f8;
+    text-decoration: none;
 }
 
 a:visited {
@@ -26,11 +27,11 @@ a:visited {
 }
 
 a:hover {
-    color: #b3c4f8;
+    color: #fff;
 }
 
 a:active {
-    color: #b3c4f8;
+    color: #3C1C69;
 }
 
 /* Main Body Content */
@@ -54,11 +55,6 @@ section {
 
 /* Heading Text 1 - Big */
 h1 {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:#845ff9;
-        /*  */
     color: #845ff9;
     margin: 0;
     padding: 0;
@@ -68,11 +64,6 @@ h1 {
 
 /* Heading Text 2 - Med */
 h2 {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: #b073c1;
-        /*  */
     color: #b073c1;
     margin: 0;
     padding: 0;
@@ -82,25 +73,15 @@ h2 {
 
 /* Heading Text 3 - Small */
 h3 {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: #704c9e;
-        /*  */
-    color: #704c9e;
+    color: #B073C1;
     margin: 0;
     padding: 0;
 }
 
 /* Paragraph Text */
 p {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color: greenyellow;
-        /*  */
     margin: 0;
-    text-align: justify;
+    text-align: center;
 }
 /* ********** END OF CONTROLS FOR ENTIRE PAGE ********** */
 
@@ -108,7 +89,7 @@ p {
 
 /* ********** HEADER - LOGO / NAVIGATION LINKS ********** */
 header {
-    background-color: #2e093e;
+    background-color: #B073C1;
     position: sticky;
     top: 0;
     height: 6vh;
@@ -126,11 +107,6 @@ header {
 
 /* Nav Bar - Flex Element Within Header Flex Element */
 #navbar {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
     padding: 0;
     width: 300px;
     font-size: 1.5em;
@@ -142,17 +118,9 @@ header {
 /* Nav Buttons - List Element Within Navbar Element */
 /* Eventually make this into a full cover button */
 .navbutton {
-        /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:orange;
-        /*  */
     list-style-type: none;
 }
 
-.navbutton a:hover {
-    background-color: pink;
-}
 /* ********** END HEADER FLEX ELEMENT ********** */
 
 /*  */
@@ -163,32 +131,47 @@ header {
 #home {
     width: 55vw;
     min-height: 100vh;
-}
-
-.hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 2em;
 }
 
-.hero img {
-    width: 16em;
+#home img {
+            /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+    min-height: 150%;
 }
 
-.herotext {
+#herotext {
+            /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+    max-width: 55%;
     display: flex;
     flex-direction: column;
+    gap: .5em
 }
-
 
 /* About */
 #about {
     width: 55vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+}
+
+.contentwrapper {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
     gap: .5em;
 }
 
@@ -197,21 +180,21 @@ header {
     width: 55vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: .5em;
-    scroll-margin-top: .5em;
+    align-items: center;
+
 }
 
 /* PROJECT GALLERY DIV */
 #gallery {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 #gallery img {
-    width: 30%;
+    width: 16em;
 }
 /* END PROJECT GALLERY */
 
