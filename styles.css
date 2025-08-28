@@ -230,12 +230,14 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     gap: .5em;
-
 }
 
 #credits li {
-    list-style-image: url("/assets/sparkle16px.png");
+    background-image: url("assets/sparkle16px.png");
     list-style-position: inside;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
 }
 
 /* LINK OUT - RIGHT SIDE */
