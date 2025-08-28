@@ -142,16 +142,19 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
 #home img {
-    max-width: 32em;
+    max-width: 25em;
+    min-width: 50%;
 }
 
 #herotext {
     max-width: 20em;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .5em
 }
 
